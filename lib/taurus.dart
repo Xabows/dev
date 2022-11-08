@@ -7,8 +7,6 @@ class taurus_Page extends StatefulWidget {
   State<taurus_Page> createState() => _taurusState();
 }
 
-//comentário téste
-
 class _taurusState extends State<taurus_Page> {
   //Preencher variáveis abaixo
   String vetorFilePng = 'taurusVetor.png';

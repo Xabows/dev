@@ -1,21 +1,22 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zodiac_signs/components/alerta.dart';
 import 'package:zodiac_signs/components/constantes.dart';
 
-class gemini_Page extends StatefulWidget {
+class virgo_Page extends StatefulWidget {
+  const virgo_Page({super.key});
+
   @override
-  State<gemini_Page> createState() => _geminiState();
+  State<virgo_Page> createState() => _virgoState();
 }
 
-class _geminiState extends State<gemini_Page> {
+class _virgoState extends State<virgo_Page> {
   //Preencher variáveis abaixo
-  String vetorFilePng = 'geminiVetor.png';
-  String signo = 'GÊMEOS';
+  String vetorFilePng = 'virgoVetor.png';
+  String signo = 'VIRGEM';
   String ordemSigno =
-      'terceiro'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
-  String datas = '21 de Maio ~ 20 de Junho';
-  String subTitulo = 'O Imortal';
+      'sexto'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
+  String datas = '23 de Agosto ~ 22 de Setembro';
+  String subTitulo = 'O ÁRBITRO';
   String imagemPathPng = 'mercury.png';
 
   //Não preencher variável abaixo
@@ -36,7 +37,7 @@ class _geminiState extends State<gemini_Page> {
           child: Column(children: [
             SubTitulo(context, vetorFilePng, subTitulo, datas),
             Mito(context, ordemSigno,
-                'O mito de gêmeos começa quando Leda, esposa do rei Tíndaro de Esparta, foi se banhar em um rio, então Zeus, senhor supremo do olímpo se apaixonou por ela.\n\n Para se aproximar de Leda, Zeus se transformou no mais magnífico e belo dos cisnes. \nNo mesmo dia que zeus possuiu Leda, ela voltou para casa e se deitou com seu marido, e ela engravidou de 4 filhos, Castor e Clitemnestra, filhos de Tíndaro, e Helena e Pollux, filhos de Zeus. Até então, não se sabia que 2 de seus 4 filhos eram na realidade semideus, e apesar de serem de pais diferentes, Castor e Pollux eram idênticos em aparência, sendo acossiados como gêmeos. Ambos se tornaram corajosos e excepcionais guerreiros, e faziam parte dos membros dos argonautas. Em uma de suas viagens, os irmãos batalharam com outro par de gêmeos, umas histórias dizendo que era em nome de damas, outras dizendo que fora por causa de alimento, no entanto, ambas tiveram o mesmo fim.\n\n Castor perdeu sua vida na batalha.\n Pollux, desesperado, tenta se matar, mas não consegue e descobre sua imortalidade, don proveniente de sua parte divina.\n\n Pollux suplicou a Zeus para que ele pudesse compartilhar sua imortalidade com seu irmão, para que ele pudesse voltar a vida. No entanto, nem Zeus poderia tirar alguma alma do submundo para sempre, então determinou que todos os dias os irmãos inverteriam de lugar, enquanto um estava no submundo, o outro disfrutaria da imortalidade na terra.\n\nAinda comovido pelo amor de seus irmãos, os gêmeos receberam a honra de serem imortalizados no céu como a constelação de Gêmeos.'),
+                "Filha de Cronos e Réia, Deméter é a deusa grega da colheita, estações do ano e da fertilidade. Certa vez, ela gerou uma filha com Zeus chamada Perséfone. E, um dia, essa criança estava brincando nas floretas junto com as ninfas e suas tias. \n\nHades, seu tio e guardião do submundo, resolveu raptá-la, e levou-a ao mundo dos mortos. Como consequência do sequestro, toda a terra secou e Deméter ficou desesperada. Foi então que ela decidiu recorrer à Zeus, o qual foi até o submundo tentar um acordo com Hades. \n\nO que ele conseguiu não foi muito: Perséfone poderia ficar ao lado de sua mãe por seis meses, mas os outros seis deveriam ser vividos junto de seu marido no mundo subterrâneo. \n\nDe acordo com o mito, esta seria a causa de metade do ano termos a terra fértil e a outra metade seca e estéril."),
           ]),
         ) //Background
       ]), //Origem
@@ -62,25 +63,25 @@ class _geminiState extends State<gemini_Page> {
                     Alerta(
                         context,
                         Titulos.elem,
-                        CupertinoIcons.wind,
-                        Titulos.arEl,
-                        Colors.lightGreenAccent,
-                        Titulos.arEl,
-                        ElementoDescricao.arDesc),
+                        Icons.landscape_outlined,
+                        Titulos.terraEl,
+                        Colors.brown,
+                        Titulos.terraEl,
+                        ElementoDescricao.terraDesc),
                     AlertaImg(
                         context,
                         Titulos.planet,
                         imagemPathPng,
                         Listas.planetas[0],
-                        Colors.lightGreenAccent,
+                        Colors.brown,
                         Listas.planetas[0],
-                        'Aqui, temos a rica forma de expressar o que sentimos e o que queremos. Geralmente são pessoas ávidas por todo tipo de conhecimento, seja um estudo filosófico ou um novo jogo de videogame, por exemplo. São curiosas, comunicativas, têm um raciocínio rápido. Se interessam pelo que o outro pensa e também respeitam as mais diversas opiniões.'),
+                        "Mercúrio também rege Virgem. Com esta combinação temos o planeta como fonte de análise. É o olhar observador, a expressão pragmática e objetiva. São pessoas que sabem analisar as coisas, preferem observar antes de falar, mesmo que a cabeça esteja a mil, atenta aos detalhes. São práticas e falam sem rodeios. É importante cuidar da ansiedade, pois se cobram muito em tudo que fazem."),
                     Alerta(
                         context,
                         Titulos.ass,
                         Icons.all_inclusive,
                         Associacao.mut,
-                        Colors.lightGreenAccent,
+                        Colors.brown,
                         Associacao.mut,
                         AssociacaoDescricao.mutDesc),
                     Container(
@@ -89,10 +90,10 @@ class _geminiState extends State<gemini_Page> {
                   ],
                 ),
                 Divider(),
-                CombPolar(context, 'Libra\nAuário\nAries\nLeão\nSagitário',
-                    Icons.male),
+                CombPolar(context, "Touro\nVirgem\nLibra\nCapricórnio\nPeixes",
+                    Icons.female),
                 Divider(),
-                Animal(context, 'Gêmeos imortais'),
+                Animal(context, "Deusa virgem"),
                 Divider(),
               ],
             )
@@ -121,11 +122,11 @@ class _geminiState extends State<gemini_Page> {
               child: const Center(
                 child: Text(
                     textAlign: TextAlign.center,
-                    '►Curioso◄\n'
-                    '►Independente◄\n'
-                    '►Expressivo◄\n'
-                    '►Sociável◄\n'
-                    '►Astuto◄',
+                    '► Sensível◄\n'
+                    '► Tranquilo◄\n'
+                    '► Fácil◄\n'
+                    '► Caloroso◄\n'
+                    '► Inteligente◄',
                     style: TextStyle(color: Colors.black, fontSize: 20)),
               ),
             )

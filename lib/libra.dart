@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:zodiac_signs/components/alerta.dart';
 import 'package:zodiac_signs/components/constantes.dart';
 
-class gemini_Page extends StatefulWidget {
+class libra_Page extends StatefulWidget {
   @override
-  State<gemini_Page> createState() => _geminiState();
+  State<libra_Page> createState() => _libraState();
 }
 
-class _geminiState extends State<gemini_Page> {
+class _libraState extends State<libra_Page> {
   //Preencher variáveis abaixo
-  String vetorFilePng = 'geminiVetor.png';
-  String signo = 'GÊMEOS';
+  String vetorFilePng = 'libraVetor.png';
+  String signo = 'LIBRA';
   String ordemSigno =
-      'terceiro'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
-  String datas = '21 de Maio ~ 20 de Junho';
-  String subTitulo = 'O Imortal';
-  String imagemPathPng = 'mercury.png';
+      'sétimo'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
+  String datas = '23 de Setembro ~ 22 de Outubro';
+  String subTitulo = 'O EQUILÍBRIO';
+  String imagemPathPng = '';
 
   //Não preencher variável abaixo
   int indexBase = 0;
@@ -36,7 +36,7 @@ class _geminiState extends State<gemini_Page> {
           child: Column(children: [
             SubTitulo(context, vetorFilePng, subTitulo, datas),
             Mito(context, ordemSigno,
-                'O mito de gêmeos começa quando Leda, esposa do rei Tíndaro de Esparta, foi se banhar em um rio, então Zeus, senhor supremo do olímpo se apaixonou por ela.\n\n Para se aproximar de Leda, Zeus se transformou no mais magnífico e belo dos cisnes. \nNo mesmo dia que zeus possuiu Leda, ela voltou para casa e se deitou com seu marido, e ela engravidou de 4 filhos, Castor e Clitemnestra, filhos de Tíndaro, e Helena e Pollux, filhos de Zeus. Até então, não se sabia que 2 de seus 4 filhos eram na realidade semideus, e apesar de serem de pais diferentes, Castor e Pollux eram idênticos em aparência, sendo acossiados como gêmeos. Ambos se tornaram corajosos e excepcionais guerreiros, e faziam parte dos membros dos argonautas. Em uma de suas viagens, os irmãos batalharam com outro par de gêmeos, umas histórias dizendo que era em nome de damas, outras dizendo que fora por causa de alimento, no entanto, ambas tiveram o mesmo fim.\n\n Castor perdeu sua vida na batalha.\n Pollux, desesperado, tenta se matar, mas não consegue e descobre sua imortalidade, don proveniente de sua parte divina.\n\n Pollux suplicou a Zeus para que ele pudesse compartilhar sua imortalidade com seu irmão, para que ele pudesse voltar a vida. No entanto, nem Zeus poderia tirar alguma alma do submundo para sempre, então determinou que todos os dias os irmãos inverteriam de lugar, enquanto um estava no submundo, o outro disfrutaria da imortalidade na terra.\n\nAinda comovido pelo amor de seus irmãos, os gêmeos receberam a honra de serem imortalizados no céu como a constelação de Gêmeos.'),
+                'Segundo a lenda, Têmis, a deusa da Justiça, personificação física da ordem, dos direitos e da lei, filha dos titãs primordiais Urano e Gaia, foi criada pelas moiras, as 3 irmãs deusas primordiais do destino que regem o ciclo de existência de todo o cosmos.\n\nAs moiras a ensinaram tudo sobre a ordem e eventos do universo.O seu simbolo, a balança também foi colocado em uma constelação, até hoje regendo todos os juramentos e justiça sobre os mesmos, onde nem mesmo os deuses do olimpo quebram a lei divina.'),
           ]),
         ) //Background
       ]), //Origem
@@ -67,32 +67,32 @@ class _geminiState extends State<gemini_Page> {
                         Colors.lightGreenAccent,
                         Titulos.arEl,
                         ElementoDescricao.arDesc),
-                    AlertaImg(
+                    Alerta(
                         context,
                         Titulos.planet,
-                        imagemPathPng,
-                        Listas.planetas[0],
+                        Icons.female_outlined,
+                        Listas.planetas[1],
                         Colors.lightGreenAccent,
-                        Listas.planetas[0],
-                        'Aqui, temos a rica forma de expressar o que sentimos e o que queremos. Geralmente são pessoas ávidas por todo tipo de conhecimento, seja um estudo filosófico ou um novo jogo de videogame, por exemplo. São curiosas, comunicativas, têm um raciocínio rápido. Se interessam pelo que o outro pensa e também respeitam as mais diversas opiniões.'),
+                        Listas.planetas[1],
+                        'O planeta Vênus, representado pela deusa da belesa e do amor Afrodite, rege o signo de touro. São pessoas altamente determinadas, sempre em busca do prazer, e dos seus desejos, com sempre a maior força de vontade e perseverança.'),
                     Alerta(
                         context,
                         Titulos.ass,
-                        Icons.all_inclusive,
-                        Associacao.mut,
+                        Icons.timeline,
+                        Associacao.card,
                         Colors.lightGreenAccent,
-                        Associacao.mut,
-                        AssociacaoDescricao.mutDesc),
+                        Associacao.card,
+                        AssociacaoDescricao.cardDesc),
                     Container(
                       width: 10,
                     )
                   ],
                 ),
                 Divider(),
-                CombPolar(context, 'Libra\nAuário\nAries\nLeão\nSagitário',
+                CombPolar(context, 'Touro\nCâncer\nVirgem\nCapricórnio\nPeixes',
                     Icons.male),
                 Divider(),
-                Animal(context, 'Gêmeos imortais'),
+                Animal(context, 'Balança'),
                 Divider(),
               ],
             )
@@ -121,11 +121,11 @@ class _geminiState extends State<gemini_Page> {
               child: const Center(
                 child: Text(
                     textAlign: TextAlign.center,
-                    '►Curioso◄\n'
-                    '►Independente◄\n'
-                    '►Expressivo◄\n'
-                    '►Sociável◄\n'
-                    '►Astuto◄',
+                    '►Idealista◄\n'
+                    '►Diplomático◄\n'
+                    '►Sincero◄\n'
+                    '►Generoso◄\n'
+                    '►Lógico◄',
                     style: TextStyle(color: Colors.black, fontSize: 20)),
               ),
             )

@@ -7,9 +7,11 @@ import 'package:zodiac_signs/cancer.dart';
 import 'package:zodiac_signs/capri.dart';
 import 'package:zodiac_signs/gemini.dart';
 import 'package:zodiac_signs/home.dart';
+import 'package:zodiac_signs/libra.dart';
 import 'package:zodiac_signs/pisces.dart';
 import 'package:zodiac_signs/scorpio.dart';
 import 'package:zodiac_signs/taurus.dart';
+import 'package:zodiac_signs/virgo.dart';
 
 final navigatorkeyy = GlobalKey<NavigatorState>();
 
@@ -21,11 +23,13 @@ void main() {
     home: home_page(),
     routes: {
       "/home": (_) => home_page(),
-      "/map": (_) => zodiac_map(),
+      "/zgmap": (_) => zodiac_map(),
       "/aries": (_) => aries_Page(),
       "/taurus": (_) => taurus_Page(),
       "/gemini": (_) => gemini_Page(),
       "/cancer": (_) => cancer_Page(),
+      "/libra": (_) => libra_Page(),
+      "/virgo": (_) => virgo_Page(),
       "/scorpio": (_) => scorpio_Page(),
       "/capri": (_) => capri_Page(),
       "/pisces": (_) => Pisces_Page(),

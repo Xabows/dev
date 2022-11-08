@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zodiac_signs/components/alerta.dart';
+import 'package:zodiac_signs/components/menu_drawer.dart';
 
 class home_page extends StatelessWidget {
   const home_page({Key? key}) : super(key: key);
@@ -20,39 +23,13 @@ class home_page extends StatelessWidget {
           backgroundColor: Colors.purple,
           title: const Text('Zodíaco'),
           titleTextStyle: TextStyle(fontSize: 30, color: Colors.black)),
-      drawer: Drawer(
-          child: Column(
-        children: [
-          const SizedBox(height: 80),
-          Row(
-            children: [
-              IconButton(
-                  onPressed: null, icon: Icon(Icons.home_rounded, size: 40)),
-              Text(
-                'Home Page',
-                style: TextStyle(fontSize: 25),
-              ),
-            ],
-          ), //Home
-          const SizedBox(
-            height: 80,
-          ),
-          Row(children: [
-            IconButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).pushNamed('/map');
-              },
-              icon: Image(image: AssetImage('assets/Recursos/Crescent.png')),
-            ),
-            Text(
-              'Zodiaco Grego',
-              style: TextStyle(fontSize: 25),
-            )
-          ]),
-          TextButton(onPressed: () {showLicensePage(context: context,applicationName: 'Zodíacos');}, child: Text('Licensas!'))//Zodiac
-        ],
-      )),
+      drawer: ddrawer(
+          context,
+          unusedMenuBt(context, Icons.home, 'Início'),
+          usedMenuBt(context, '/zgmap', CupertinoIcons.moon_stars_fill,
+              'Zodíaco Grego'),
+          unusedMenuBt(context, Icons.local_florist_sharp, 'Zodíaco Chinês')),
+      endDrawer: drawerFim(context),
       body: Stack(
         children: [
           Container(
@@ -63,13 +40,7 @@ class home_page extends StatelessWidget {
           ),
           SingleChildScrollView(
             child: Column(
-              children: [
-                Text(
-                  texto,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 20, color: Colors.yellow),
-                ),
-              ],
+              children: [Mito(context, '', texto)],
             ),
           ),
         ],

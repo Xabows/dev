@@ -317,11 +317,11 @@ class Mito extends Container {
               gradient: const LinearGradient(
                 colors: [
                   Colors.white,
-                  Colors.transparent,
-                  Colors.transparent,
-                  Colors.transparent,
-                  Colors.transparent,
-                  Colors.white
+                  Colors.white10,
+                  Colors.white10,
+                  Colors.white10,
+                  Colors.white10,
+                  Colors.white54
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,

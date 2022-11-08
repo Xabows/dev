@@ -14,7 +14,7 @@ class _scorpioState extends State<scorpio_Page> {
   String ordemSigno =
       'oitavo'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
   String datas = '23 de Outubro ~ 21 de Novembro';
-  String subTitulo = 'O INCENDIÁRIO';
+  String subTitulo = 'A VINGANÇA';
   String imagemPathPng = 'pluto.png';
 
   //Não preencher variável abaixo
