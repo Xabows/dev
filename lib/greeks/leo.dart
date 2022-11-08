@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:zodiac_signs/components/alerta.dart';
 import 'package:zodiac_signs/components/constantes.dart';
 
-class capri_Page extends StatefulWidget {
+class leo_Page extends StatefulWidget {
   @override
-  State<capri_Page> createState() => _capriState();
+  State<leo_Page> createState() => _leoState();
 }
 
-class _capriState extends State<capri_Page> {
+class _leoState extends State<leo_Page> {
   //Preencher variáveis abaixo
-  String vetorFilePng = 'capriVetor.png';
-  String signo = 'CAPRICÓRNIO';
+  String vetorFilePng = 'leoVetor.png';
+  String signo = 'LEÃO';
   String ordemSigno =
-      'décimo'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
-  String datas = '22 de Dezembro ~ 20 de Janeiro';
-  String subTitulo = 'O HÍBRIDO';
-  String imagemPathPng = 'saturn.png';
+      'quinto'; //Prencha apenas em numeral EX: quinto, décimo primeiro...
+  String datas = '22 de Julho ~ 22 de Agosto';
+  String subTitulo = 'O VERÃO';
+  String imagemPathPng = 'sun.png';
 
   //Não preencher variável abaixo
   int indexBase = 0;
@@ -34,20 +34,8 @@ class _capriState extends State<capri_Page> {
         SingleChildScrollView(
           child: Column(children: [
             SubTitulo(context, vetorFilePng, subTitulo, datas),
-            Mito(
-                context,
-                ordemSigno,
-                'A origem real do símbolo de capricórnio remete ao mito da criação babilônico, '
-                'no entanto, os gregos decidiram criar uma história. \n\n'
-                'Na luta dos Deuses olimpianos contra o titã rei dos monstros Tifão'
-                ', \nPan, o deus grego dos bosques, dos campos e dos rebanhos, deu a ideia de que os '
-                'olimpianos tomassem formas de animais para fugir, já que eles não teriam força para '
-                'batalhar contra o titã. \n\nPan então tomou a forma de meio cabra meio peixe, transformando '
-                'apenas as suas partes inferiores em peixe para fugir pelas águas. \nNo entanto, Zeus ficou para lutar.'
-                'O titã retirou os tendões dos pés e das mãos de Zeus, o deixando incapacitado para lutar.'
-                '\n\nEntão que Pan retornou com Hermes para roubar os tendões de Zeus de volta e devolver para ele, '
-                'a fim de que ele continuasse a luta e enfim derrotasse o monstro. \n\nEm agradecimento a tal feito, '
-                'Zeus concedeu uma constelação ao deus Pan, sendo a constelação de capricórnio.\n\n'),
+            Mito(context, ordemSigno,
+                "O mito da constelação de leão tem relação com o primeiro trabalho de Hércules. Quando a deusa da loucura Lissa, através do pedido de Hera, enlouquecêu hércules, ele matou em transe assassinou sua esposa e filhos enquanto dormia. \nCom remorso do ocorrido, Hércules se consultou com o oráculo de delfos, a pedido de conselhos, e sua ordem de redenção era realizar os trabalhos do rei Euristeu.\n\n Manipulado pela deusa Hera,que odiava Hércules, Euristeu passou como primeiro trabalho um serviço praticamente impossível para uma mortal, matar o leão de neméia e trazer uma prova de sua conquista.\n\n Após a árdua luta com o Leão de neméia, um animal enorme com pele impenetrável, filho do rei dos monstros, o titã Tifão, Hércules o venceu estrangulando-o. Com orgulho de seu filho, Zeus honrou sua vitória colocando a constlação de leão no arco celeste.")
           ]),
         ) //Background
       ]), //Origem
@@ -73,42 +61,37 @@ class _capriState extends State<capri_Page> {
                     Alerta(
                         context,
                         Titulos.elem,
-                        Icons.terrain_outlined,
-                        Titulos.terraEl,
-                        Colors.brown,
-                        Titulos.terraEl,
-                        ElementoDescricao.terraDesc),
+                        Icons.local_fire_department_outlined,
+                        Titulos.fogoEl,
+                        Colors.red,
+                        Titulos.fogoEl,
+                        ElementoDescricao.fogoDesc),
                     AlertaImg(
                         context,
                         Titulos.planet,
                         imagemPathPng,
-                        Listas.planetas[4],
-                        Colors.brown,
-                        Listas.planetas[4],
-                        'Saturno está associado a regenração,'
-                        'renascimento a riquesa e a abundancia, '
-                        'pois representa o lider de todos os titãs gregos, '
-                        'Cronos o titã regente do tempo.'),
+                        Listas.planetas[9],
+                        Colors.red,
+                        Listas.planetas[9],
+                        "O sol, a estrela principal de nosso sistema solar, que pulsa a energia e que rege toda a vida existente em nosso planeta se ajusta com o signo de leão, como o rei da selva. Ele representa o impulso pela sensação de realeza, ego e criatividade. Fazendo sempre o que quer, com o sentimento de dominância e liderança, possui um grande magnetismo sobre todos os outros signos com seu carísma e vitalidade."),
                     Alerta(
                         context,
                         Titulos.ass,
-                        Icons.timeline,
-                        Associacao.card,
-                        Colors.brown,
-                        Associacao.card,
-                        AssociacaoDescricao.cardDesc),
+                        Icons.brightness_low_outlined,
+                        Associacao.fix,
+                        Colors.red,
+                        Associacao.fix,
+                        AssociacaoDescricao.fixDesc),
                     Container(
                       width: 10,
                     )
                   ],
                 ),
                 Divider(),
-                CombPolar(
-                    context,
-                    'Touro\n\nCâncer\n\nVirgem\n\nEscorpião\n\nPeixes',
-                    Icons.female),
+                CombPolar(context, "Áries\nGêmeos\nLibra\nSagitário\nAquário",
+                    Icons.male),
                 Divider(),
-                Animal(context, 'Híbrido de cabra com peixe'),
+                Animal(context, "Leão"),
                 Divider(),
               ],
             )
@@ -137,11 +120,11 @@ class _capriState extends State<capri_Page> {
               child: const Center(
                 child: Text(
                     textAlign: TextAlign.center,
-                    '► Auto disciplinado◄\n'
-                    '► Perseverante◄\n'
-                    '► Estóico◄\n'
-                    '► Determinado◄\n'
-                    '► Sério◄',
+                    '►Dinâmico◄\n'
+                    '►Confiante◄\n'
+                    '►Carismático◄\n'
+                    '►Ambicioso◄\n'
+                    '►Decisivo◄',
                     style: TextStyle(color: Colors.black, fontSize: 20)),
               ),
             )

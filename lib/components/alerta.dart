@@ -68,7 +68,7 @@ class Alerta extends GestureDetector {
             },
             child: Container(
               height: 70,
-              width: 110,
+              width: 115,
               decoration: BoxDecoration(
                   color: corFundoQuad.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(20),
@@ -124,7 +124,7 @@ class AlertaImg extends GestureDetector {
             },
             child: Container(
               height: 70,
-              width: 110,
+              width: 115,
               decoration: BoxDecoration(
                   color: corFundoQuad.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(20),
@@ -142,6 +142,7 @@ class AlertaImg extends GestureDetector {
                               image: AssetImage(
                                   'assets/Recursos/alchemy/$imagemPathPng'),
                               height: 32,
+                              width: 32,
                               color: Colors.white),
                           SizedBox(
                             width: 7,
