@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:zodiac_signs/greeks/Aries.dart';
+import 'package:zodiac_signs/greeks/aquarius.dart';
 import 'package:zodiac_signs/greeks/leo.dart';
 import 'package:zodiac_signs/home.dart';
 
@@ -11,6 +12,7 @@ import 'greeks/capri.dart';
 import 'greeks/gemini.dart';
 import 'greeks/libra.dart';
 import 'greeks/pisces.dart';
+import 'greeks/sagittarius.dart';
 import 'greeks/scorpio.dart';
 import 'greeks/taurus.dart';
 import 'greeks/virgo.dart';
@@ -34,9 +36,9 @@ void main() {
       "/libra": (_) => libra_Page(),
       "/virgo": (_) => virgo_Page(),
       "/scorpio": (_) => scorpio_Page(),
-      // "/sagitt": (_) => sagitarius_Page(),
+      "/sagitt": (_) => sagitarius_Page(),
       "/capri": (_) => capri_Page(),
-      //"/aqua": (_) => aquarius_Page(),
+      "/aqua": (_) => aqua_Page(),
       "/pisces": (_) => Pisces_Page(),
     },
     navigatorKey: navigatorkeyy,

@@ -122,11 +122,11 @@ class _virgoState extends State<virgo_Page> {
               child: const Center(
                 child: Text(
                     textAlign: TextAlign.center,
-                    '► Sensível◄\n'
-                    '► Tranquilo◄\n'
-                    '► Fácil◄\n'
-                    '► Caloroso◄\n'
-                    '► Inteligente◄',
+                    '►Eficiente◄\n'
+                    '►Calmo◄\n'
+                    '►Altruísta◄\n'
+                    '►Adaptável◄\n'
+                    '►Sensível◄',
                     style: TextStyle(color: Colors.black, fontSize: 20)),
               ),
             )

@@ -20,9 +20,9 @@ class home_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.purple,
-          title: const Text('Zodíaco'),
-          titleTextStyle: TextStyle(fontSize: 30, color: Colors.black)),
+          backgroundColor: Color(0xFF2b2b2b),
+          title: Text("Início", textAlign: TextAlign.center),
+          titleTextStyle: TextStyle(fontSize: 30, color: Colors.white)),
       drawer: ddrawer(
           context,
           unusedMenuBt(context, Icons.home, 'Início'),
@@ -40,7 +40,7 @@ class home_page extends StatelessWidget {
           ),
           SingleChildScrollView(
             child: Column(
-              children: [Mito(context, '', texto)],
+              children: [Home(context, texto)],
             ),
           ),
         ],

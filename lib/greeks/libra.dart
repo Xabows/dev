@@ -121,11 +121,11 @@ class _libraState extends State<libra_Page> {
               child: const Center(
                 child: Text(
                     textAlign: TextAlign.center,
-                    '►Idealista◄\n'
-                    '►Diplomático◄\n'
-                    '►Sincero◄\n'
-                    '►Generoso◄\n'
-                    '►Lógico◄',
+                    '►Amigável◄\n'
+                    '►Justo◄\n'
+                    '►sábio◄\n'
+                    '►Esperançoso◄\n'
+                    '►Pacífico◄',
                     style: TextStyle(color: Colors.black, fontSize: 20)),
               ),
             )

@@ -39,9 +39,10 @@ dependencies:
   get: ^4.6.5
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.9.2
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.9.2
+
 
 flutter_icons:
   android: true
@@ -94,6 +95,7 @@ flutter:
     - assets/Recursos/vector/scorpioVetor.png
     - assets/Recursos/vector/sagiVetor.png
     - assets/Recursos/vector/capriVetor.png
+    - assets/Recursos/vector/aquariusVetor.png
     - assets/Recursos/vector/piscesVetor.png
     - assets/Recursos/vector/zchart.png
     #alchemy
@@ -109,6 +111,8 @@ flutter:
     #BG
     - assets/Recursos/gif/moving_star.gif
     - assets/Recursos/BackGround.png
+    #LAUNCHER
+    - assets/Recursos/logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

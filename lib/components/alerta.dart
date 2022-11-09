@@ -19,7 +19,7 @@ class Animal extends Container {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('Animal', style: TextStyle(color: Colors.white)),
+                  Text('Regente', style: TextStyle(color: Colors.white)),
                   SizedBox(
                     height: 2,
                   ),
@@ -328,6 +328,37 @@ class Mito extends Container {
           child: Center(
             child: Text(
                 '\n\nO $ordemSigno signo do zodíaco Grego.\n\n$mito\n\n',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    color: Colors.lightBlue, fontSize: 20)), //ORIGEM!!!!!!!!
+          ),
+        ));
+}
+
+class Home extends Container {
+  Home(
+    BuildContext context,
+    String mito,
+  ) : super(
+            child: Container(
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+              border: Border.all(width: 2),
+              borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
+                colors: [
+                  Colors.white,
+                  Colors.white10,
+                  Colors.white10,
+                  Colors.white10,
+                  Colors.white10,
+                  Colors.white54
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              )),
+          child: Center(
+            child: Text('\n\n$mito\n\n',
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                     color: Colors.lightBlue, fontSize: 20)), //ORIGEM!!!!!!!!
