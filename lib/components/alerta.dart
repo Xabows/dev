@@ -137,6 +137,7 @@ class AlertaImg extends GestureDetector {
                       Text(elePlanAssTit,
                           style: TextStyle(color: Colors.white)),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Image(
                               image: AssetImage(
@@ -144,9 +145,6 @@ class AlertaImg extends GestureDetector {
                               height: 32,
                               width: 32,
                               color: Colors.white),
-                          SizedBox(
-                            width: 7,
-                          ),
                           Text(elePlanAss,
                               style: TextStyle(color: Colors.white))
                         ],
